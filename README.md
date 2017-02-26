@@ -55,3 +55,26 @@ store.dispatch(
 ```
 
 ![Notice](/example/img/notice.png?raw=true "Notice")
+
+
+##Options
+
+**Component**
+
+The notices component by default will display an icon, title and `text` that you pass to the `addNotice` action. You can change the actual component being rendered for each notice if [this](/component/index.js) isn't good enough for you:
+
+```js
+
+import Notices from 'redux-notice/component'
+
+export default () => (
+  <Provider store={store}>
+    <div>
+      <Notices
+        item={error => <p>{error.text}</p>}
+      />
+    </div>
+  </Provider>
+);
+
+```
