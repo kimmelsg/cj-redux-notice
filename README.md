@@ -14,9 +14,9 @@ This isn't quite finished yet, but here's what it would look like!
 
 ##Install
 
-1. Add the reducer
+**Add the reducer**
 
-```
+```js
 import reduxNotice from 'redux-notice/reducer'
 
 let reducers = combineReducers({
@@ -24,9 +24,9 @@ let reducers = combineReducers({
 })
 ```
 
-2. Add the Notices component to the top level
+**Add the Notices component to the top level**
 
-```
+```js
 import Notices from 'redux-notice/component'
 
 export default () => (
@@ -41,13 +41,14 @@ export default () => (
 
 ```
 
-3. Dispatch some notices!
+**Dispatch some notices!**
 
 ![Notice](/example/img/notice.png?raw=true "Notice")
 
+
+```js
 import { addNotice } from 'redux-notice'
 
-```
 store.dispatch(
   addNotice({
     type: 'error',
