@@ -43,9 +43,6 @@ export default () => (
 
 **Dispatch some notices!**
 
-![Notice](/example/img/notice.png?raw=true "Notice")
-
-
 ```js
 import { addNotice } from 'redux-notice'
 
@@ -56,3 +53,5 @@ store.dispatch(
   }),
 );
 ```
+
+![Notice](/example/img/notice.png?raw=true "Notice")
